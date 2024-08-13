@@ -1,0 +1,3 @@
+[submodule "submodules/Workflow_front"]
+	path = submodules/Workflow_front
+	url = https://github.com/Ali-Rhayem/Workflow_front.git
