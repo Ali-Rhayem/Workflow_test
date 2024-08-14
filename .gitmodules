@@ -1,6 +1,0 @@
-[submodule "Front"]
-	path = Front
-	url = https://github.com/Ali-Rhayem/Workflow_front.git
-[submodule "Back"]
-	path = Back
-	url = https://github.com/Ali-Rhayem/Workflow_back.git
