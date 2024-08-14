@@ -17,7 +17,7 @@ jobs:
     - name: Update submodules
       run: |
         git submodule sync --recursive
-        git submodule update --init --recursive --remote --merge
+        git submodule update --init --recursive --remote
         git submodule status
 
     - name: Commit and Push changes
@@ -27,5 +27,5 @@ jobs:
         git add .
         git status
         git commit -m "Automatically updated submodules" || echo "No changes to commit"
-        git remote set-url origin https://${{ secrets.PAT }}@github.com/Ali-Rhayem/Workflow_test.git
+        git remote set-url origin https://${{secrets.PAT}}@github.com/Ali-Rhayem/Workflow_test.git
         git push || echo "Failed to push"
